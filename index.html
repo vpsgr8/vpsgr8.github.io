@@ -258,6 +258,7 @@
         </div>
       </div>
       <p class="text-center text-xs text-slate-400 mt-6">© 2026 English in 100 Days • Made with ❤️ for India • Listen → Speak → Understand → Grammar</p>
+      <div id="amazonFooterNote"></div>
     </div>
   </footer>
 </div>
@@ -342,6 +343,8 @@
 
     <!-- Certificates -->
     <div id="certificatesCard"></div>
+
+    <div id="amazonAffiliateCard"></div>
 
     <!-- Feature Grid -->
     <h3 class="font-semibold mb-4">Practice & Learn</h3>
@@ -525,6 +528,7 @@
 <script src="config.local.js" onerror=""></script>
 <script src="js/guest-access.js"></script>
 <script src="js/adsense.js"></script>
+<script src="js/amazon-affiliate.js"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="js/razorpay-pay.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -639,6 +643,9 @@ function showView(id) {
   const nav = document.getElementById('mainNav');
   if (['landing','auth'].includes(id)) { nav.classList.add('hidden'); }
   else { nav.classList.remove('hidden'); updateNav(); }
+  if (id === 'landing') {
+    document.getElementById('amazonFooterNote').innerHTML = window.AmazonAffiliate?.renderFooterNote?.() || '';
+  }
   if (id === 'dashboard') renderDashboard();
   if (id === 'scenarios') renderScenarioList();
   if (id === 'games') renderGame();
@@ -740,6 +747,8 @@ function renderDashboard() {
     </div>`;
   window._wotdShare = shareText;
   document.getElementById('certificatesCard').innerHTML = Certificates.renderDashboardCard(user);
+  document.getElementById('amazonAffiliateCard').innerHTML = window.AmazonAffiliate?.renderDashboardCard?.() || '';
+  document.getElementById('amazonFooterNote').innerHTML = window.AmazonAffiliate?.renderFooterNote?.() || '';
 }
 
 // ===== LESSON =====

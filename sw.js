@@ -1,4 +1,4 @@
-const CACHE = 'ei100d-v5';
+const CACHE = 'ei100d-v6';
 const BASE = new URL('./', self.location).href;
 
 const ASSETS = [
@@ -9,6 +9,7 @@ const ASSETS = [
   'manifest.json',
   'js/guest-access.js',
   'js/adsense.js',
+  'js/amazon-affiliate.js',
   'js/razorpay-pay.js',
   'js/ai-service.js',
   'js/certificates.js',

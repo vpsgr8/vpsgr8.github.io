@@ -21,6 +21,10 @@ const APP_CONFIG = {
   adsenseClientId: 'ca-pub-5121623665404680',
   adsenseBannerSlot: '',
 
+  // Amazon Associates India
+  amazonAffiliateTag: 'glamstore072-21',
+  amazonDomain: 'amazon.in',
+
   basePath: (function () {
     if (typeof location === 'undefined') return '/';
     const p = location.pathname;
