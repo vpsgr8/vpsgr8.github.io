@@ -1,8 +1,11 @@
-const CACHE = 'ei100d-v6';
+const CACHE = 'ei100d-v7';
 const BASE = new URL('./', self.location).href;
 
 const ASSETS = [
   'index.html',
+  'about.html',
+  'contact.html',
+  'blog.html',
   'admin.html',
   'lessons.json',
   'config.js',
@@ -14,6 +17,8 @@ const ASSETS = [
   'js/ai-service.js',
   'js/certificates.js',
   'js/pwa.js',
+  'js/seo.js',
+  'js/blog-content.js',
   'icons/icon.svg'
 ].map(f => BASE + f);
 

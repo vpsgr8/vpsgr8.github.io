@@ -6,6 +6,6 @@ window.APP_CONFIG = {
   razorpayKeyId: 'rzp_test_YOUR_KEY_ID',
   razorpayPaymentLink: '',
   adsenseEnabled: true,
-  adsenseClientId: 'ca-pub-XXXXXXXXXXXXXXXX',
+  adsenseClientId: 'ca-pub-5121623665404680',
   adsenseBannerSlot: ''
 };

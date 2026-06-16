@@ -25,6 +25,10 @@ const APP_CONFIG = {
   amazonAffiliateTag: 'glamstore072-21',
   amazonDomain: 'amazon.in',
 
+  companyName: 'MarketMind Labs',
+  contactEmail: 'mml.products26@gmail.com',
+  siteUrl: 'https://vpsgr8.github.io/',
+
   basePath: (function () {
     if (typeof location === 'undefined') return '/';
     const p = location.pathname;
