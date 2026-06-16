@@ -18,8 +18,8 @@ const APP_CONFIG = {
 
   // Google AdSense (https://adsense.google.com → Account → Settings)
   adsenseEnabled: true,
-  adsenseClientId: '',       // e.g. ca-pub-1234567890123456
-  adsenseBannerSlot: '',     // optional display ad unit slot ID
+  adsenseClientId: 'ca-pub-5121623665404680',
+  adsenseBannerSlot: '',
 
   basePath: (function () {
     if (typeof location === 'undefined') return '/';

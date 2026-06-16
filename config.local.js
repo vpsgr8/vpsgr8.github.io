@@ -5,5 +5,8 @@ window.APP_CONFIG = {
   premiumAmount: 29900,
   razorpayEnabled: true,
   razorpayKeyId: 'rzp_live_T28wwjAyHRA0jd',
-  razorpayPaymentLink: ''
+  razorpayPaymentLink: '',
+  adsenseEnabled: true,
+  adsenseClientId: 'ca-pub-5121623665404680',
+  adsenseBannerSlot: ''
 };

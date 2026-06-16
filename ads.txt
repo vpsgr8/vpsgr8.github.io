@@ -1,5 +1,1 @@
-# Google AdSense publisher ID (Account → Settings → Publisher ID)
-VITE_ADSENSE_CLIENT_ID=
-
-# Optional: display ad unit slot ID for banner placements
-VITE_ADSENSE_BANNER_SLOT=
+google.com, pub-5121623665404680, DIRECT, f08c47fec0942fa0
